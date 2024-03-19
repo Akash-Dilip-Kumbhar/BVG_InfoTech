@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>BVG-InfoTech</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-primary text-white d-none d-lg-flex">
+        <div class="container py-2">
+            <div class="d-flex align-items-center">
+                <div class="ms-auto d-flex align-items-center">
+                    <small class="ms-4"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</small>
+                    <small class="ms-4"><i class="fa fa-envelope me-3"></i>info@example.com</small>
+                    <small class="ms-4"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</small>
+                    <div class="ms-3 d-flex">
+                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-white sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
+                <a href="index.html" class="navbar-brand d-lg-none">
+                    <div class="LogoBx">
+                        <img src="/img/Logo/Sample.png" class="LogoImg" alt="LogoImg" width="100" height="100" />
+                        <div class="LogoText">InfoTech</div>
+                    </div>
+                </a>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <a href="index.html" class="LogoLink">
+                        <div class="LogoBx">
+                            <img src="/img/Logo/Sample.png" class="LogoImg" alt="LogoImg" width="100" height="100" />
+                            <div class="LogoText">InfoTech</div>
+                        </div>
+                    </a>
+                    <div class="navbar-nav">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="/Aboutus.html" class="nav-item nav-link">About us</a>
+                        <a href="/Sectors.html" class="nav-item nav-link">Sectors</a>
+                        <a href="/index.html" class="nav-item nav-link">Projects</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Service</a>
+                            <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+                                <a href="/DataCenter.html" class="dropdown-item active">Data Centers</a>
+                                <a href="/CyberSecurity.html" class="dropdown-item">Cyber Security</a>
+                                <a href="/IoT.html" class="dropdown-item">IoT</a>
+                                <a href="/ERP.html" class="dropdown-item">ERP</a>
+                                <a href="/GISData.html" class="dropdown-item">Satellite GIS Data Analysis</a>
+                                <a href="/TempleManagement.html" class="dropdown-item">Temple Management</a>
+                                <a href="/DocManagement.html" class="dropdown-item">Document Management</a>
+                                <a href="/ITInfrastructure.html" class="dropdown-item">IT Infrastructure Management</a>
+                                <a href="/Staffing.html" class="dropdown-item">IT Staffing</a>
+                                <a href="/HospitalManagement.html" class="dropdown-item">Hospital Management</a>
+                                <a href="/SoftwareDevelopment.html" class="dropdown-item">Software Development</a>
+                                <a href="/index.html" class="dropdown-item">Training</a>
+                                <a href="/ParkingManagement.html" class="dropdown-item">Parking Management</a>
+                                <a href="/BankManagement.html" class="dropdown-item">Bank Management</a>
+                            </div>
+                        </div>
+                        <a href="/index.html" class="nav-item nav-link">Contact</a>
+
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid px-0 mb-5">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-7 text-start">
+                                    <p class="fs-4 text-white animated slideInRight">Welcome to
+                                        <strong>GrowMark</strong>
+                                    </p>
+                                    <h1 class="display-1 text-white mb-4 animated slideInRight">Unlock Your Business
+                                        Growth</h1>
+                                    <a href=""
+                                        class="btn btn-primary rounded-pill py-3 px-5 animated slideInRight">Explore
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-end">
+                                <div class="col-lg-7 text-end">
+                                    <p class="fs-4 text-white animated slideInLeft">Welcome to <strong>GrowMark</strong>
+                                    </p>
+                                    <h1 class="display-1 text-white mb-5 animated slideInLeft">Ready to Grow Your
+                                        Business</h1>
+                                    <a href=""
+                                        class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Explore
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- BussinessUnit Start -->
+    <div class="container-xxl py-5" style="background-color: #f5f5f5;">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s">
+                <p class="fs-5 fw-medium text-primary">Our Business Units</p>
+                <h1 class="display-5 mb-5">Data Center IT service that We Offer</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-6 mb-3 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="Service-Bx">
+                        <div class="Pic-Bx">
+                            <img src="/img/project-1.jpg" class="width-100" alt="HostingService">
+                        </div>
+                        <div class="Content-Bx">
+                            <div class="Head-Text">Hosting Services </div>
+                            <ul class="Service-List">
+                                <li class="List-Items">Digital Transformation </li>
+                                <li class="List-Items">Domain Registration </li>
+                                <li class="List-Items">Cloud Hosting </li>
+                                <li class="List-Items">SmarterMail Solution </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 mb-3 wow fadeInLeft" data-wow-delay="0.3s">
+                    <div class="Service-Bx">
+                        <div class="Pic-Bx">
+                            <img src="/img/project-1.jpg" class="width-100" alt="HostingService">
+                        </div>
+                        <div class="Content-Bx">
+                            <div class="Head-Text">Cloud & Managed Services</div>
+                            <ul class="Service-List">
+                                <li class="List-Items">IaaS, PaaS </li>
+                                <li class="List-Items">Managed DC services </li>
+                                <li class="List-Items">Migration Services </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 mb-3 wow fadeInLeft" data-wow-delay="0.5s">
+                    <div class="Service-Bx">
+                        <div class="Pic-Bx">
+                            <img src="/img/project-1.jpg" class="width-100" alt="HostingService">
+                        </div>
+                        <div class="Content-Bx">
+                            <div class="Head-Text">Security Solution </div>
+                            <ul class="Service-List">
+                                <li class="List-Items">SSL </li>
+                                <li class="List-Items">Firewalls </li>
+                                <li class="List-Items">Cloud Backup & DR</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 mb-3 wow fadeInLeft" data-wow-delay="0.7s">
+                    <div class="Service-Bx">
+                        <div class="Pic-Bx">
+                            <img src="/img/project-1.jpg" class="width-100" alt="HostingService">
+                        </div>
+                        <div class="Content-Bx">
+                            <div class="Head-Text">Data Center Services </div>
+                            <ul class="Service-List">
+                                <li class="List-Items">Colocation Services </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BussinessUnit End -->
+
+
+
+    <!-- BussinessUnit Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-medium text-primary">Our Footprints</p>
+                <h1 class="display-5 mb-5">Data Center IT service that We Offer</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-7">
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6 col-6  wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="Footprint-Bx">
+                                <div class="Content-Bx">
+                                    <div class="Head-Text">24x7 Support</div>
+                                    <div class="Text">24x7 Support via eMail, Chat, Tickets and Call </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-6  wow fadeInUp" data-wow-delay="0.7s">
+                            <div class="Footprint-Bx">
+                                <div class="Content-Bx">
+                                    <div class="Head-Text">20 Locations
+                                    </div>
+                                    <div class="Text">in 20 Locations across & 10 Countries in 3 Continents
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-6  wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="Footprint-Bx">
+                                <div class="Content-Bx">
+                                    <div class="Head-Text">50000cr+</div>
+                                    <div class="Text">Growing Cloud Computing Industry</div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-6  wow fadeInUp" data-wow-delay="1.1s">
+                            <div class="Footprint-Bx">
+                                <div class="Content-Bx">
+                                    <div class="Head-Text">ISO Certified</div>
+                                    <div class="Text">ISO 27001:2022 & ISO
+                                        9001:2015 Certified
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-6  wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="Footprint-Bx">
+                                <div class="Content-Bx">
+                                    <div class="Head-Text">85+</div>
+                                    <div class="Text">Technical Specialists</div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-6 wow fadeInUp" data-wow-delay="0.9s">
+                            <div class="Footprint-Bx">
+                                <div class="Content-Bx">
+                                    <div class="Head-Text">4 Office </div>
+                                    <div class="Text"> 4 Office locations in India
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 wow fadeInUp d-flex align-items-center" data-wow-delay="0.3s">
+                    <div class="Pic-Bx">
+                        <img src="/img/Pngs/Picture1.png" alt="Pic1" class="width-100">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- BussinessUnit End -->
+
+
+
+    <!-- ServicePortfolio Start -->
+    <div class="container-xxl Service-Portfolio ">
+        <div class="bg-blue"></div>
+        <div class="container py-5 position-relative">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s">
+                <p class="fs-5 fw-medium">Our Services Portfolio</p>
+                <h1 class="display-6 mb-5">Managed Services Portfolio</h1>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-3 col-6 mb-3 ">
+                            <div class="icon-bx">
+                                <i class="fa-brands fa-windows"></i>
+                                <h5>Linux / Windows OS</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-6 mb-3 ">
+                            <div class="icon-bx">
+                                <i class="fa-solid fa-database"></i>
+                                <h5>Database Admin</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-6 mb-3 ">
+                            <div class="icon-bx">
+                                <i class="fa-solid fa-computer"></i>
+                                <h5>Application Monitoring</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-6 mb-3 ">
+                            <div class="icon-bx">
+                                <i class="fa-solid fa-wifi"></i>
+                                <h5>Network Management</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-6 mb-3 ">
+                            <div class="icon-bx">
+                                <i class="fa-solid fa-network-wired"></i>
+                                <h5>Server / Network Monitoring
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-6 mb-3 ">
+                            <div class="icon-bx">
+                                <i class="fa-brands fa-app-store-ios"></i>
+                                <h5>Web & App server</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-6 mb-3 ">
+                            <div class="icon-bx">
+                                <i class="fa-brands fa-aws"></i>
+                                <h5>Azure / AWS / GCP</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-6 mb-3 ">
+                            <div class="icon-bx">
+                                <i class="fa-solid fa-cloud-arrow-down"></i>
+                                <h5>Backup and DR</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-6 mb-3 ">
+                            <div class="icon-bx">
+                                <i class="fa-brands fa-kickstarter"></i>
+                                <h5>Kubernetes</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-6 mb-3 ">
+                            <div class="icon-bx">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <h5>Security</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-6 mb-3 ">
+                            <div class="icon-bx">
+                                <i class="fa-solid fa-chart-area"></i>
+                                <h5>Virtualization</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-6 mb-3 ">
+                            <div class="icon-bx">
+                                <i class="fa-solid fa-server"></i>
+                                <h5>Storage</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ServicePortfolio End -->
+
+
+
+
+
+    <!-- PASS Start -->
+    <div class="container-xxl  py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s">
+                <p class="fs-5 fw-medium">Our Service</p>
+                <h1 class="display-6 mb-5">We Providing Following Services</h1>
+            </div>
+
+            <div class="wow fadeInUp ServiceTypeBx" data-wow-delay="0.1s">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h1 class="display-5 mb-3 fw-700">Platform-as-a-service</h1>
+                        <div class="ServiceBx1">
+
+                            <div class="ImgBx">
+                                <img src="./img/Datacenter/Img/PASS.jpg" alt="Platform-as-a-service">
+                            </div>
+                            <div class="Service-ContentBx1">
+                                <h3 class="headText">
+                                    Edge To Edge Automation
+                                </h3>
+                                <div class="text">
+                                    India's 1st Platform-as a-service (PaaS) supporting 7 Major application platforms
+                                </div>
+                            </div>
+                            <div class="ImgBx">
+                                <img src="./img/Datacenter/Img/Pass_Tech.png" class="width-100 mb-5" alt="Pass_Tech"
+                                    style=" border-radius:0 ;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5" style="display: flex; flex-direction: column; align-items: center;">
+                        <div class="ServiceBx1-iconbx wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="iconbx">
+                                <img src="./img/Datacenter/Img/Icon1.png" alt="">
+                                <div class="icontext">Easy to Deploy</div>
+                            </div>
+                        </div>
+
+                        <div class="ServiceBx1-iconbx wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="iconbx">
+                                <img src="./img/Datacenter/Img/Icon2.png" alt="">
+                                <div class="icontext">Easy to Scale </div>
+                            </div>
+                        </div>
+
+                        <div class="ServiceBx1-iconbx wow fadeInUp" data-wow-delay="0.8s">
+                            <div class="iconbx">
+                                <img src="./img/Datacenter/Img/Icon3.png" alt="">
+                                <div class="icontext">Easy to Managed
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- PASS End -->
+
+    <!-- BussinessUnit Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="ServiceTypeBx wow fadeInUp" data-wow-delay="0.1s">
+                <div class="row">
+                    <div class="col-lg-6 col-md-5 wow fadeInUp d-flex align-items-center" data-wow-delay="0.3s">
+                        <div class="Pic-Bx" style="height: 450px;">
+                            <img src="/img/Datacenter/Img/CloudServer.png" alt="Pic1" class="height-100">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-7">
+                        <h1 class="display-5 mb-5 fw-700">GPU Cloud Servers</h1>
+
+                        <h5>In India</h5>
+                        <ul class="checklist">
+                            <li> <i class="fa-solid fa-check-double"></i> High </li>
+                            <li> <i class="fa-solid fa-check-double"></i> Pay per use Performance </li>
+                            <li> <i class="fa-solid fa-check-double"></i> A100, A40, A5000, A6000 </li>
+                            <li> <i class="fa-solid fa-check-double"></i> Highly Scalable </li>
+                            <li> <i class="fa-solid fa-check-double"></i> Virtualized vGPU Options </li>
+                            <li> <i class="fa-solid fa-check-double"></i> Powerful & Reliable </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BussinessUnit End -->
+
+    <!-- BussinessUnit Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="ServiceTypeBx">
+                <div class="row">
+                    <div class="col-lg-6 col-md-7">
+                        <h1 class="display-5 mb-2 fw-700">Bare Metal Cloud</h1>
+                        <h3 class="mb-5">(Dedicated Servers)</h3>
+
+                        <h5>In India, USA and EU</h5>
+                        <ul class="checklist">
+                            <li> <i class="fa-solid fa-check-double"></i> Premium Network Tier-I Carriers </li>
+                            <li> <i class="fa-solid fa-check-double"></i> High Performance </li>
+                            <li> <i class="fa-solid fa-check-double"></i> Save 60% compared to AWS </li>
+                            <li> <i class="fa-solid fa-check-double"></i> Azure, GCP </li>
+                            <li> <i class="fa-solid fa-check-double"></i> Guaranteed SLA </li>
+                            <li> <i class="fa-solid fa-check-double"></i> Rapid Deployment </li>
+                            <li> <i class="fa-solid fa-check-double"></i> World Class Datacenters </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-5 wow fadeInUp d-flex align-items-center" data-wow-delay="0.3s">
+                        <div class="Pic-Bx">
+                            <img src="/img/Datacenter/Img/MetalCloud.png" alt="MetalCloud" class="width-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BussinessUnit End -->
+
+    <!-- BussinessUnit Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="ServiceTypeBx">
+                <div class="row">
+                    <div class="col-lg-6 col-md-5 wow fadeInUp d-flex align-items-center" data-wow-delay="0.3s">
+                        <div class="Pic-Bx" style="height: 450px;">
+                            <img src="/img/Datacenter/Img/ManageCloudServer.png" alt="ManageCloudServer"
+                                class="height-100">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-7">
+                        <h1 class="display-5 mb-5 fw-700">Managed Cloud Servers</h1>
+
+                        <h5>In India, USA and EU</h5>
+                        <ul class="checklist">
+                            <li> <i class="fa-solid fa-check-double"></i> Powerful & Reliable </li>
+                            <li> <i class="fa-solid fa-check-double"></i> 24x7 Support </li>
+                            <li> <i class="fa-solid fa-check-double"></i> Control Panel & Scalability </li>
+                            <li> <i class="fa-solid fa-check-double"></i> Choose your server locations & setup in
+                                minutes </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BussinessUnit End -->
+
+    <!-- BussinessUnit Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="ServiceTypeBx">
+                <div class="row">
+
+                    <div class="col-lg-7 col-md-7">
+                        <h1 class="display-5 mb-2 fw-700">Cloud Backup & Ransomware Protection</h1>
+
+                        <h3 class="mb-5 ">Acronis Certified Partner </h3>
+                        <ul class="checklist">
+                            <li> <i class="fa-solid fa-check-double"></i> The most reliable and easy-to-use backup for
+                                businesses of all sizes </li>
+                            <li> <i class="fa-solid fa-check-double"></i> A single solution to offer multiple modern
+                                data protection services to your customers
+                            </li>
+                            <li> <i class="fa-solid fa-check-double"></i> Acronis Backup Helps IT keep the Business
+                                Running
+                            </li>
+                            <li> <i class="fa-solid fa-check-double"></i> Full Availability, No Downtime
+                            </li>
+                            <li> <i class="fa-solid fa-check-double"></i> Complete Protection, Now and Forever
+                            </li>
+                            <li> <i class="fa-solid fa-check-double"></i> Fast Backup, Non-Stop Business
+                            </li>
+                            <li> <i class="fa-solid fa-check-double"></i> File Synchronization & Share
+                            </li>
+                            <li> <i class="fa-solid fa-check-double"></i> Anti Ransomware
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-5 col-md-5 wow fadeInUp d-flex align-items-center" data-wow-delay="0.3s">
+                        <div class="Pic-Bx" style="height: 450px;">
+                            <img src="/img/Datacenter/Img/RansomwareProtection.png" alt="RansomwareProtection"
+                                class="width-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BussinessUnit End -->
+
+    <!-- BussinessUnit Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="ServiceTypeBx">
+                <div class="row">
+
+                    <div class="col-lg-7 col-md-7">
+                        <h1 class="display-5 mb-2 fw-700">Microsoft 365</h1>
+
+                        <h3 class="mb-5">Experience Counts — we’ve specialized in email migration for over 15 years
+                        </h3>
+
+                        <ul class="checklist">
+                            <li> <i class="fa-solid fa-check-double"></i> Office 365 is used by over 30 million
+                                mailboxes worldwide </li>
+
+                            <li> <i class="fa-solid fa-check-double"></i>Supports all versions of virtually every
+                                messaging system </li>
+
+                            <li> <i class="fa-solid fa-check-double"></i> Market proven technology assures rapid
+                                throughput and maintains data integrity </li>
+
+                            <li> <i class="fa-solid fa-check-double"></i> Intuitive interface for single user migrations
+                                or automated migrations of bulk users
+                            </li>
+
+                            <li> <i class="fa-solid fa-check-double"></i> Easy deployment – less than 5 minutes </li>
+
+                            <li> <i class="fa-solid fa-check-double"></i> Support by the most experienced</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-5 col-md-5 wow fadeInUp d-flex align-items-center" data-wow-delay="0.3s">
+                        <div class="Pic-Bx" style="height: 450px;">
+                            <img src="/img/Datacenter/Img/office365.png" alt="office365" class="width-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="mt-3 text-center"> "While we’re email conversion experts – we don’t expect you to
+                            be!"
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BussinessUnit End -->
+
+    <!-- Client Showcase Start -->
+    <div class="container-xxl p-3">
+        <div class="container py-5">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s">
+                <p class="fs-5 fw-medium">Our Clients</p>
+                <h1 class="display-6 mb-5">Meet Our Happy Client</h1>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="ClientLogo-Silder">
+                        <div class="ClientLogoBx">
+                            <img src="./img/Datacenter/Clients/Apptractor.webp" class="ClientLogo" alt="Apptractorlogo">
+                        </div>
+                        <div class="ClientLogoBx">
+                            <img src="./img/Datacenter/Clients/Booking.webp" class="ClientLogo" alt="Booking">
+                        </div>
+                        <div class="ClientLogoBx">
+                            <img src="./img/Datacenter/Clients/Easypolicy.webp" class="ClientLogo" alt="Easypolicy">
+                        </div>
+                        <div class="ClientLogoBx">
+                            <img src="./img/Datacenter/Clients/Geosansar.webp" class="ClientLogo" alt="Geosansar">
+                        </div>
+                        <div class="ClientLogoBx">
+                            <img src="./img/Datacenter/Clients/Honeywell.webp" class="ClientLogo" alt="Honeywell">
+                        </div>
+                        <div class="ClientLogoBx">
+                            <img src="./img/Datacenter/Clients/JalgaonBank.webp" class="ClientLogo" alt="JalgaonBank">
+                        </div>
+                        <div class="ClientLogoBx">
+                            <img src="./img/Datacenter/Clients/MangoMedia.webp" class="ClientLogo" alt="MangoMedia">
+                        </div>
+                        <div class="ClientLogoBx">
+                            <img src="./img/Datacenter/Clients/Oneplay.webp" class="ClientLogo" alt="Oneplay">
+                        </div>
+                        <div class="ClientLogoBx">
+                            <img src="./img/Datacenter/Clients/RateGain.webp" class="ClientLogo" alt="RateGain">
+                        </div>
+                        <div class="ClientLogoBx">
+                            <img src="./img/Datacenter/Clients/Reckitt.webp" class="ClientLogo" alt="Reckitt">
+                        </div>
+                        <div class="ClientLogoBx">
+                            <img src="./img/Datacenter/Clients/Seram.webp" class="ClientLogo" alt="Seram">
+                        </div>
+                        <div class="ClientLogoBx">
+                            <img src="./img/Datacenter/Clients/SharadBank.webp" class="ClientLogo" alt="SharadBank">
+                        </div>
+                        <div class="ClientLogoBx">
+                            <img src="./img/Datacenter/Clients/Tata.webp" class="ClientLogo" alt="Tata">
+                        </div>
+                        <div class="ClientLogoBx">
+                            <img src="./img/Datacenter/Clients/Walmart.webp" class="ClientLogo" alt="Walmart">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Client Showcase  End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Our Office</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Business Hours</h4>
+                    <p class="mb-1">Monday - Friday</p>
+                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
+                    <p class="mb-1">Saturday</p>
+                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
+                    <p class="mb-1">Sunday</p>
+                    <h6 class="text-light">Closed</h6>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative w-100">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="Your email">
+                        <button type="button"
+                            class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-medium text-light" href="#">Your Site Name</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="fw-medium text-light" href="">HTML Codex</a>
+                    Distributed By <a class="fw-medium text-light" href="">ThemeWagon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-qFOQ9YFAeGj1gDOuUD61g3D+tLDv3u1ECYWqT82WQoaWrOhAY+5mRMTTVsQdWutbA5FORCnkEPEgU0OF8IzGvA=="></script>
+
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.ClientLogo-Silder').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                centerMode: true,
+                variableWidth: true,
+                autoplay: true,
+                autoplaySpeed: 500,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 5,
+                            slidesToScroll: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+
+</html>

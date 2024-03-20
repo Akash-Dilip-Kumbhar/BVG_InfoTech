@@ -35,6 +35,10 @@
   font-weight: 900;
 }
 
+p{
+  font-family: "Montserrat", sans-serif;
+}
+
 .text-justify{
   text-align: justify;
 }
@@ -271,6 +275,12 @@
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url(../img/about.jpg) left center no-repeat;
   background-size: cover;
+}
+
+.About-Staffz {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../img/Staffz/IMG/slide-a.jpg) right bottom no-repeat;
+  background-size:cover; 
 }
 
 .btn-play {

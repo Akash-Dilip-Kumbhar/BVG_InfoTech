@@ -108,6 +108,39 @@
             font-family: "Montserrat", sans-serif;
             text-align: center;
         }
+        .bread-crumb {
+            list-style: none;
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: -100px;
+            padding-left: 0rem;
+        }
+
+        .bread-crumb .breadcrumb-item {
+
+            margin-right: 10px;
+        }
+
+        .bread-crumb .breadcrumb-item a {
+
+            text-decoration: none;
+        }
+
+        .bread-crumb .breadcrumb-item a:hover {
+            color: #2a5392;
+            text-decoration: underline;
+        }
+
+        .bread-crumb .breadcrumb-item i {
+            margin-right: 5px;
+            font-size: 14px;
+        }
+
+        .bread-crumb .breadcrumb-item+.breadcrumb-item::before {
+            content: "";
+        }
     </style>
 </head>
 
@@ -199,59 +232,32 @@
     <!-- Navbar End -->
 
 
-    <!-- Carousel Start -->
-    <div class="container-fluid px-0 mb-5">
-        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-lg-7 text-start">
-                                    <p class="fs-4 text-white animated slideInRight">Welcome to
-                                        <strong>GrowMark</strong>
-                                    </p>
-                                    <h1 class="display-1 text-white mb-4 animated slideInRight">Unlock Your Business
-                                        Growth</h1>
-                                    <a href=""
-                                        class="btn btn-primary rounded-pill py-3 px-5 animated slideInRight">Explore
-                                        More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-end">
-                                <div class="col-lg-7 text-end">
-                                    <p class="fs-4 text-white animated slideInLeft">Welcome to <strong>GrowMark</strong>
-                                    </p>
-                                    <h1 class="display-1 text-white mb-5 animated slideInLeft">Ready to Grow Your
-                                        Business</h1>
-                                    <a href=""
-                                        class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Explore
-                                        More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-    <!-- Carousel End -->
+      <!-- Page Header Start -->
+      <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s"
+      style="background-image: url('./img/CyberSecurity/Img/colibri-image-28.jpg'); background-position-y: bottom;">
+      <div class="container text-center py-5">
+          <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-12 position-relative">
+                  <h2 class="display-h1 text-white mb-4 fw-700 animated slideInDown">Professional discretion Information security
+                    Services for a changing world</h2>
+                  <h5 class="display-h4 text-white fw-600  animated slideInUp">AUDIT | COMPLIANCE | RISK | PRIVACY | TRAINING
+
+                  </h5>
+                  <ul class="bread-crumb">
+                      <li class="breadcrumb-item">
+                          <a href="/index.html">Home</a>
+                      </li>
+                      <li class="breadcrumb-item"><i class="fa-solid fa-angle-right"></i> Cyber Security</li>
+                  </ul>
+              </div>
+          </div>
+
+      </div>
+  </div>
+  <div class="SilderShadowbx" style="height: 0px;">
+      <img class="width-100" src="./img/Pngs/SilderShadows.png" alt="Shadows">
+  </div>
+  <!-- Page Header End -->
 
     <!-- BussinessUnit Start -->
     <div class="container-xxl py-5" style="background-color: #f5f5f5;">
@@ -375,7 +381,7 @@
                 <div class="col-lg-4 col-md-6 col-6 mb-3 wow fadeInLeft" data-wow-delay="0.1s">
                     <div class="Service-Bx">
                         <div class="Pic-Bx">
-                            <img src="img/CyberSecurity/Img/Governance.webp" class="width-100" alt="HostingService">
+                            <img src="img/CyberSecurity/Img/Governance.png" class="width-100" alt="HostingService">
                         </div>
                         <div class="Content-Bx">
                             <div class="Head-Text border-bottom-none ">Governance, Risk, Compliance & Privacy
@@ -408,7 +414,7 @@
                 <div class="col-lg-4 col-md-6 col-6 mb-3 wow fadeInLeft" data-wow-delay="0.7s">
                     <div class="Service-Bx">
                         <div class="Pic-Bx">
-                            <img src="img/project-1.jpg" class="width-100" alt="HostingService">
+                            <img src="img/CyberSecurity/Img/Technology.jpg" class="width-100" alt="HostingService">
                         </div>
                         <div class="Content-Bx">
                             <div class="Head-Text border-bottom-none">Technology & Products </div>
@@ -419,7 +425,7 @@
                 <div class="col-lg-4 col-md-6 col-6 mb-3 wow fadeInLeft" data-wow-delay="0.5s">
                     <div class="Service-Bx">
                         <div class="Pic-Bx">
-                            <img src="img/project-1.jpg" class="width-100" alt="HostingService">
+                            <img src="img/CyberSecurity/Img/CloudServices.jpg" class="width-100" alt="HostingService">
                         </div>
                         <div class="Content-Bx">
                             <div class="Head-Text  border-bottom-none">Cloud Services </div>
@@ -430,7 +436,7 @@
                 <div class="col-lg-4 col-md-6 col-6 mb-3 wow fadeInLeft" data-wow-delay="0.7s">
                     <div class="Service-Bx">
                         <div class="Pic-Bx">
-                            <img src="img/project-1.jpg" class="width-100" alt="HostingService">
+                            <img src="img/CyberSecurity/Img/vCISO.jpg" class="width-100" alt="HostingService">
                         </div>
                         <div class="Content-Bx">
                             <div class="Head-Text border-bottom-none">vCISO </div>

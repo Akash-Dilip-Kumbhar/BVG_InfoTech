@@ -905,3 +905,9 @@ p{
   font-weight: 500;
 }
 
+/**********IOT-Section**************/
+.About-IoT {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../img/IoT/Img/AboutUsCover.jpg) right bottom no-repeat;
+  background-size:cover; 
+}

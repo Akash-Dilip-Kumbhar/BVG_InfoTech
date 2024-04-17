@@ -41,9 +41,41 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <style>
-        ul.Service-List{
-            padding-left: 1rem;
+          .bread-crumb {
+            list-style: none;
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: -100px;
+            padding-left: 0rem;
         }
+
+        .bread-crumb .breadcrumb-item {
+            margin-right: 10px;
+        }
+
+        .bread-crumb .breadcrumb-item a {
+            text-decoration: none;
+        }
+
+        .bread-crumb .breadcrumb-item a:hover {
+            color: #2a5392;
+            text-decoration: underline;
+        }
+
+        .bread-crumb .breadcrumb-item i {
+            margin-right: 5px;
+            font-size: 14px;
+        }
+
+        .bread-crumb .breadcrumb-item+.breadcrumb-item::before {
+            content: "";
+        }
+        ul.Service-List {
+            padding-left: 2rem;
+        }
+
         .list-none {
             list-style: none;
         }
@@ -153,17 +185,30 @@
     </div>
     <!-- Navbar End -->
 
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container text-center py-5">
-            <h1 class="display-4 text-white mb-4 fw-700 animated slideInDown">IoT</h1>
-
-        </div>
-    </div>
-    <!-- Page Header End -->
+     <!-- Page Header Start -->
+     <div class="container-fluid page-header wow fadeIn" data-wow-delay="0.1s"
+     style="background-image: url('./img/IoT/Img/Bg.jpg'); background-position-y: center; padding: 4rem 0;">
+     <div class="container text-center py-5">
+         <div class="row">
+             <div class="col-xl-6 col-lg-6 col-md-6 col-12 position-relative">
+                 <h1 class="display-h1 text-white mb-4 fw-700 animated slideInDown">Committed to Climate Change Mitigation</h1>
+               <ul class="bread-crumb">
+                     <li class="breadcrumb-item">
+                         <a href="/index.html">Home</a>
+                     </li>
+                     <li class="breadcrumb-item"><i class="fa-solid fa-angle-right"></i> IoT</li>
+                 </ul>
+             </div>
+         </div>
+     </div>
+ </div>
+ <div class="SilderShadowbx" style="height: 0px;">
+     <img class="width-100" src="./img/Pngs/SilderShadows.png" alt="Shadows">
+ </div>
+ <!-- Page Header End -->
 
     <!-- About Start -->
-    <div class="container-xxl py-5 mb-5" style="background-color: #b3d0bc;">
+    <div class="container-xxl py-5 mb-5" >
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
@@ -178,7 +223,7 @@
                             goals, we design, implement, & operate solutions to enhance energy efficiency services.
                             Committed to growth, we employ targeted acquisitions to expand our expertise & offerings.
                         </p>
-                        <ul class="fw-600 list-none">
+                        <ul class="fw-600">
                             <li><i class="fa-solid fa-check"></i> Highly Qualified Engineering Team </li>
                             <li><i class="fa-solid fa-check"></i> BEE & AEE Certified Auditor Team </li>
                             <li><i class="fa-solid fa-check"></i> 1100+ Detailed Audits </li>
@@ -190,7 +235,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="/img/IoT/Img/AboutUs-sqaure.jpg" class="width-100">
+                    <img src="/img/IoT/Img/AboutUsCover.png" class="width-100">
                 </div>
             </div>
         </div>
@@ -202,14 +247,14 @@
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s">
                 <p class="fs-5 fw-medium text-primary">Our Business Units</p>
-                <h1 class="display-5 mb-5">Data Center IT service that We Offer</h1>
+                <h1 class="display-5 mb-5"> IoT service that We Offer</h1>
             </div>
 
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-6 mb-3 wow fadeInLeft" data-wow-delay="0.1s">
                     <div class="Service-Bx">
                         <div class="Pic-Bx">
-                            <img src="img/Datacenter/Img/HostingServices.webp" loading="lazy" class="width-100"
+                            <img src="/img/IoT/Img/EnergyAudits.jpg" loading="lazy" class="width-100"
                                 alt="HostingService">
                         </div>
                         <div class="Content-Bx">
@@ -218,51 +263,51 @@
 
                             <div class="visibleContent">
                                 <ul class="Service-List">
-                                   <li class="List-Items list-none"> Material & Energy Balance </li>
-                                   <li class="List-Items list-none"> Pumping System </li>
-                                   <li class="List-Items list-none"> Fans & Blowers </li>
-                                   <li class="List-Items list-none"> Compressed Air System </li>
+                                    <li class="List-Items"> Material & Energy Balance </li>
+                                    <li class="List-Items"> Pumping System </li>
+                                    <li class="List-Items"> Fans & Blowers </li>
+                                    <li class="List-Items"> Compressed Air System </li>
                                 </ul>
                             </div>
                             <div class="InvisibleContent">
                                 <ul class="Service-List">
-                                   <li class="List-Items list-none"> Material & Energy Balance </li>
-                                   <li class="List-Items list-none"> Pumping System </li>
-                                   <li class="List-Items list-none"> Fans & Blowers </li>
-                                   <li class="List-Items list-none"> Compressed Air System </li>
-                                   <li class="List-Items list-none"> HVAC Analysis - Chiller, AHU, FCU, FAHU </li>
-                                   <li class="List-Items list-none"> Electric Motors </li>
-                                   <li class="List-Items list-none"> Electrical Systems </li>
-                                   <li class="List-Items list-none"> Building Electrical System & ECBC </li>
-                                   <li class="List-Items list-none"> DG System Analysis </li>
-                                   <li class="List-Items list-none"> Lighting System </li>
-                                   <li class="List-Items list-none"> Heat Exchangers </li>
-                                   <li class="List-Items list-none"> Waster Heat Recovery </li>
-                                   <li class="List-Items list-none"> Boilers </li>
-                                   <li class="List-Items list-none"> Cogeneration </li>
-                                   <li class="List-Items list-none"> Insulation & Refractories </li>
-                                   <li class="List-Items list-none"> Furnaces </li>
-                                   <li class="List-Items list-none"> Steam system </li>
+                                    <li class="List-Items"> Material & Energy Balance </li>
+                                    <li class="List-Items"> Pumping System </li>
+                                    <li class="List-Items"> Fans & Blowers </li>
+                                    <li class="List-Items"> Compressed Air System </li>
+                                    <li class="List-Items"> HVAC Analysis - Chiller, AHU, FCU, FAHU </li>
+                                    <li class="List-Items"> Electric Motors </li>
+                                    <li class="List-Items"> Electrical Systems </li>
+                                    <li class="List-Items"> Building Electrical System & ECBC </li>
+                                    <li class="List-Items"> DG System Analysis </li>
+                                    <li class="List-Items"> Lighting System </li>
+                                    <li class="List-Items"> Heat Exchangers </li>
+                                    <li class="List-Items"> Waster Heat Recovery </li>
+                                    <li class="List-Items"> Boilers </li>
+                                    <li class="List-Items"> Cogeneration </li>
+                                    <li class="List-Items"> Insulation & Refractories </li>
+                                    <li class="List-Items"> Furnaces </li>
+                                    <li class="List-Items"> Steam system </li>
                                 </ul>
                             </div>
-                          <button id="btn" class="btn btn-primary btn-sm btnpress">Read More</button>
+                            <button id="btn" class="btn btn-primary btn-sm btnpress">Read More</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-6 mb-3 wow fadeInLeft" data-wow-delay="0.3s">
                     <div class="Service-Bx">
                         <div class="Pic-Bx">
-                            <img src="img/Datacenter/Img/CloudManaged.webp" class="width-100" loading="lazy"
+                            <img src="img/IoT/Img/Monitoring.jpg" class="width-100" loading="lazy"
                                 alt="HostingService">
                         </div>
                         <div class="Content-Bx">
                             <div class="Head-Text">IoT Based Energy Monitoring & Analytics</div>
                             <div class="visibleContent">
                                 <ul class="Service-List">
-                                    <li class="List-Items list-none">
+                                    <li class="List-Items">
                                         NBSense is Smart IoT based Technology Developed by Navy Blue Energy
                                     </li>
-                                   <li class="List-Items list-none">
+                                    <li class="List-Items">
                                         The Real-time data get collected by Smart meters through......
                                     </li>
                                 </ul>
@@ -279,10 +324,10 @@
                             </div>
                             <div class="InvisibleContent">
                                 <ul class="Service-List">
-                                   <li class="List-Items list-none">
+                                    <li class="List-Items">
                                         NBSense is Smart IoT based Technology Developed by Navy Blue Energy
                                     </li>
-                                   <li class="List-Items list-none">
+                                    <li class="List-Items">
                                         The Real-time data get collected by
                                         Smart meters through Cloud & can
                                         be Access from anywhere.
@@ -291,92 +336,97 @@
                                 </ul>
 
                             </div>
-                          <button id="btn" class="btn btn-primary btn-sm btnpress">Read More</button>
+                            <button id="btn" class="btn btn-primary btn-sm btnpress">Read More</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-6 mb-3 wow fadeInLeft" data-wow-delay="0.5s">
                     <div class="Service-Bx">
                         <div class="Pic-Bx">
-                            <img src="img/Datacenter/Img/SecuritySolution.webp" class="width-100" loading="lazy"
+                            <img src="img/IoT/Img/WaterAuditing.jpg" class="width-100" loading="lazy"
                                 alt="HostingService">
                         </div>
                         <div class="Content-Bx">
                             <div class="Head-Text">Water Audit </div>
                             <div class="visibleContent">
                                 <ul class="Service-List">
-                                   <li class="List-Items list-none"> Water Balance (input & output) </li>
-                                   <li class="List-Items list-none"> Defining the baseline (KPI) as per facility Operation </li>
-                                   <li class="List-Items list-none"> Gap Analysis- Standard vs Designed vs Actual </li>
+                                    <li class="List-Items"> Water Balance (input & output) </li>
+                                    <li class="List-Items"> Defining the baseline (KPI) as per facility
+                                        Operation </li>
+                                    <li class="List-Items"> Gap Analysis- Standard vs Designed vs Actual </li>
                                 </ul>
                             </div>
                             <div class="InvisibleContent">
                                 <ul class="Service-List">
-                                   <li class="List-Items list-none"> Water Balance (input & output) </li>
-                                   <li class="List-Items list-none"> Defining the baseline (KPI) as per facility Operation </li>
-                                   <li class="List-Items list-none"> Gap Analysis- Standard vs Designed vs Actual </li>
-                                   <li class="List-Items list-none"> Water Conservation Measures (Reduce, Reuse & Recycle)
+                                    <li class="List-Items"> Water Balance (input & output) </li>
+                                    <li class="List-Items"> Defining the baseline (KPI) as per facility
+                                        Operation </li>
+                                    <li class="List-Items"> Gap Analysis- Standard vs Designed vs Actual </li>
+                                    <li class="List-Items"> Water Conservation Measures (Reduce, Reuse &
+                                        Recycle)
                                     </li>
-                                   <li class="List-Items list-none"> Rainwater Harvesting Feasibility </li>
-                                   <li class="List-Items list-none"> Detailed Report Submission with Cost-Benefit Analysis</li>
+                                    <li class="List-Items"> Rainwater Harvesting Feasibility </li>
+                                    <li class="List-Items"> Detailed Report Submission with Cost-Benefit
+                                        Analysis</li>
                                 </ul>
                             </div>
-                          <button id="btn" class="btn btn-primary btn-sm btnpress">Read More</button>
+                            <button id="btn" class="btn btn-primary btn-sm btnpress">Read More</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-6 mb-3 wow fadeInLeft" data-wow-delay="0.7s">
                     <div class="Service-Bx">
                         <div class="Pic-Bx">
-                            <img src="img/Datacenter/Img/DataCenter.webp" class="width-100" alt="HostingService">
+                            <img src="img/IoT/Img/Carbon.jpg" class="width-100" alt="HostingService">
                         </div>
                         <div class="Content-Bx">
                             <div class="Head-Text">Carbon Footprint Auditing & Mitigation Plan </div>
                             <div class="visibleContent">
                                 <ul class="Service-List">
-                                   <li class="List-Items list-none"> Defining the Scope (level 1, 2 or 3) </li>
-                                   <li class="List-Items list-none"> Data collection (Inventory with proofs) </li>
-                                   <li class="List-Items list-none"> Selecting Applicable GHG Standards </li>
+                                    <li class="List-Items"> Defining the Scope (level 1, 2 or 3) </li>
+                                    <li class="List-Items"> Data collection (Inventory with proofs) </li>
+                                    <li class="List-Items"> Selecting Applicable GHG Standards </li>
                                 </ul>
                             </div>
                             <div class="InvisibleContent">
                                 <ul class="Service-List">
-                                   <li class="List-Items list-none"> Defining the Scope (level 1, 2 or 3) </li>
-                                   <li class="List-Items list-none"> Data collection (Inventory with proofs) </li>
-                                   <li class="List-Items list-none"> Selecting Applicable GHG Standards </li>
-                                   <li class="List-Items list-none"> Emission factors Selection </li>
-                                   <li class="List-Items list-none"> Gross Accounting </li>
-                                   <li class="List-Items list-none"> Proposing a Mitigation Plan (like by enhancing energy
+                                    <li class="List-Items"> Defining the Scope (level 1, 2 or 3) </li>
+                                    <li class="List-Items"> Data collection (Inventory with proofs) </li>
+                                    <li class="List-Items"> Selecting Applicable GHG Standards </li>
+                                    <li class="List-Items"> Emission factors Selection </li>
+                                    <li class="List-Items"> Gross Accounting </li>
+                                    <li class="List-Items"> Proposing a Mitigation Plan (like by enhancing
+                                        energy
                                         efficiency, substitutes like renewable sources, or offsetting by
                                         investing in green project or buying carbon credits)
                                     </li>
-                                   <li class="List-Items list-none"> Report Submission & Assist to implement</li>
+                                    <li class="List-Items"> Report Submission & Assist to implement</li>
                                 </ul>
                             </div>
-                          <button id="btn" class="btn btn-primary btn-sm btnpress">Read More</button>
+                            <button id="btn" class="btn btn-primary btn-sm btnpress">Read More</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-6 mb-3 wow fadeInLeft" data-wow-delay="0.7s">
                     <div class="Service-Bx">
                         <div class="Pic-Bx">
-                            <img src="img/Datacenter/Img/DataCenter.webp" class="width-100" alt="HostingService">
+                            <img src="img/IoT/Img/RenewableEnergy2.jpg" class="width-100" alt="HostingService">
                         </div>
                         <div class="Content-Bx">
                             <div class="Head-Text">Renewable Energy Consulting</div>
                             <div class="visibleContent">
                                 <ul class="Service-List">
-                                   <li class="List-Items list-none">We Provide complete turnkey
+                                    <li class="List-Items">We Provide complete turnkey
                                         Engineering Consultation Solution for the
-                                        solar Power Project viz ,Concept, Project
-                                        Feasibility, Preliminary.... </li>
+                                        solar Power Project viz, Concept, Project
+                                        Feasibility, Preliminary Design.... </li>
                                 </ul>
                             </div>
                             <div class="InvisibleContent">
                                 <ul class="Service-List">
-                                   <li class="List-Items list-none"> We Provide complete turnkey
+                                    <li class="List-Items"> We Provide complete turnkey
                                         Engineering Consultation Solution for the
-                                        solar Power Project viz ,Concept, Project
+                                        solar Power Project viz, Concept, Project
                                         Feasibility, Preliminary Design, Execution
                                         Planning, Project Realization. </li>
                                 </ul>

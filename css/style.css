@@ -911,3 +911,8 @@ p{
     url(../img/IoT/Img/AboutUsCover.jpg) right bottom no-repeat;
   background-size:cover; 
 }
+.About-ERP {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../img/ERP/Img/ERP.jpg) right bottom no-repeat;
+  background-size:cover; 
+}
